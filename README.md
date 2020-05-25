@@ -21,8 +21,7 @@ git clone  git@github.com:devops-bootcampers/Jenkin-docker-in-docker.git
 docker build -t jenkins/jenkins:lts .
 ```
 
-```
-docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
+```docker run --name jenkins --privileged -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
 ```
 
 NOTE: read below the _build executors_ part for the role of the `50000` port mapping.
