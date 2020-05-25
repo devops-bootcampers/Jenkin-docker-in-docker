@@ -18,7 +18,7 @@ This is a fully functional Jenkins server.
 git clone  git@github.com:devops-bootcampers/Jenkin-docker-in-docker.git
 ```
 ```
-docker build -t enkins/jenkins:lts .
+docker build -t jenkins/jenkins:lts .
 ```
 
 ```
